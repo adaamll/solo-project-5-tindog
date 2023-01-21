@@ -76,6 +76,7 @@ body {
   position: absolute;
   bottom: 50px;
   left: 15px;
+  padding-right: 4em;
 }
 
 .profile-name {
