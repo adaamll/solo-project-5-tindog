@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tindog</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <img
+          class="icon-profile"
+          id="icon-profile"
+          src="images/icon-profile.png"
+          alt="icon of a man"
+        />
+        <img class="logo" id="logo" src="images/logo.png" alt="logotype" />
+        <img
+          class="icon-chat"
+          id="icon-chat"
+          src="images/icon-chat.png"
+          alt="icon of a chat bubble"
+        />
+      </header>
+      <img
+        id="like-badge"
+        class="badges hidden"
+        src="images/badge-like.png"
+        alt="badge that says like"
+      />
+      <img
+        class="badges hidden"
+        id="dislike-badge"
+        src="images/badge-nope.png"
+        alt="badge that says nope"
+      />
+      <main class="profile-container" id="profile-container"></main>
+      <footer class="footer">
+        <button class="btn-dislike btn" id="btn-dislike">
+          <img class="btn-icon" src="images/icon-cross.png" alt="" />
+        </button>
+        <button class="btn-like btn" id="btn-like">
+          <img class="btn-icon" src="images/icon-heart.png" alt="" />
+        </button>
+      </footer>
+    </div>
+    <script src="/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --primary-text-color: #f8f8f8;
+  --like-btn-hover: #dbfff4;
+  --dislike-btn-hover: #ffe7ef;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-text-color);
+  background-color: #c5c5c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  width: 550px;
+  height: 1020px;
+  background-color: whitesmoke;
+  padding: 0em 0.5em;
+  border-radius: 10px;
+}
+
+/* HEADER SECTION */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+}
+
+.logo {
+  max-width: 5.5em;
+}
+
+.icon-profile,
+.icon-chat {
+  max-height: 2.5em;
+}
+
+/* HEADER SECTION END*/
+
+/* MAIN SECTION */
+
+.profile-container {
+  position: relative;
+}
+
+.badges {
+  position: absolute;
+  top: 145px;
+  left: 25px;
+  width: 240px;
+  transform: rotate(-30deg);
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 534px;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.profile-info {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+}
+
+.profile-name {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.profile-bio {
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+
+/* MAIN SECTION END */
+
+/* FOOTER & BUTTONS SECTION */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 0;
+}
+
+.btn {
+  border-radius: 50%;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-dislike:hover {
+  background-color: var(--dislike-btn-hover);
+  box-shadow: var(--dislike-btn-hover) 0px 20px 30px -10px;
+}
+
+.btn-like:hover {
+  background-color: var(--like-btn-hover);
+  box-shadow: var(--like-btn-hover) 0px 20px 30px -10px;
+}
+
+/* FOOTER & BUTTONS SECTION END */
+
+/* CLASS THAT IS TOGGLED WITH JAVASCRIPT ON THE BADGES */
+.hidden {
+  display: none;
+}
