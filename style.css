@@ -130,3 +130,60 @@ body {
 .hidden {
   display: none;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 350px;
+    max-height: 680px;
+    padding: 0em 0.5em;
+    border-radius: 10px;
+  }
+
+  .profile-pic {
+    width: 330px;
+    height: 450px;
+    border-radius: 8px;
+  }
+
+  .profile-info {
+    bottom: 25px;
+  }
+
+  .profile-name {
+    font-size: 1.7rem;
+  }
+
+  .profile-bio {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .wrapper {
+    max-width: 270px;
+    max-height: 550px;
+    padding: 0em 0.5em;
+    border-radius: 10px;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+  }
+
+  .btn {
+    padding: 0.5em;
+  }
+
+  .logo {
+    max-width: 3em;
+  }
+
+  .icon-profile,
+  .icon-chat {
+    max-height: 1.5em;
+  }
+}

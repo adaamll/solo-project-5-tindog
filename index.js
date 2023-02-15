@@ -12,13 +12,12 @@ let dislikedDogs = [];
 likeBtn.addEventListener('click', like);
 dislikeBtn.addEventListener('click', dislike);
 
-render();
-
 /** FUNCTION TO RENDER THE HTML FOR THE DOGS */
 function render() {
   document.getElementById('profile-container').innerHTML =
     activeDog.getProfileHtml();
 }
+render();
 
 /** FUNCTION THAT GENERATES NEXT DOG TO SHOW UP IN THE APP */
 function getNextDog() {
